@@ -1,0 +1,7 @@
+{
+    "code-runner.executorMap": {
+        "java": "cd $dir && ./build.sh"
+    },
+    "code-runner.runInTerminal": true,
+    "code-runner.saveFileBeforeRun": true
+} 

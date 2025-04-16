@@ -1,0 +1,25 @@
+Da fare:
+
+1) inserire cibo mangia ghost
+2) Resettare posizione ghot quando player muore (essenziale)
+
+❌) aggiungere sezione punteggio (inutile se non c'è un salvataggio di gioco, non creabile perche non si puo variare GameUpdater)
+❌) possibilità di cambiare colore (non fattibile se non si può creare una nuova classe)
+
+Risoluzione Bug:
+1) movimento ghost --> troppo veloce, troppo casuale
+2) movimento player --> Quando si sbatte contro un muro, si resta fermi
+
+
+1)  1 --> Comportamento: insegue Pac-Man direttamente. Target: la posizione attuale di Pac-Man.
+    2 --> Comportamento: cerca di tagliare la strada a Pac-Man. Target: 4 celle davanti alla direzione in cui si sta muovendo Pac-Man.
+    3 --> Comportamento: molto complesso. Dipende sia dalla posizione di Pac-Man sia dal fantasma 1. 
+          Taget: un punto calcolato con un vettore che va dal fantasma 1 a un punto 2 celle davanti a Pac-Man.
+    4 --> Comportamento: si avvicina a Pac-Man, ma se arriva troppo vicino, scappa. 
+          Target: Se lontano da Pac-Man (> 8 celle): lo insegue. Se vicino: torna in basso a sinistra del labirinto.
+
+
+
+
+✅
+❌
